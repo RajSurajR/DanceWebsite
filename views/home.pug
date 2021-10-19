@@ -1,0 +1,48 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+  
+block style 
+  style
+    include ../static/style.css
+
+block content
+     section#introSection 
+         div Welcome to Suraj's Dance Academy 
+         div.small Eat Sleep Dance Repeat 
+
+     section#missionSection
+         h2 Our Mission
+
+         div.card 
+           h3 Dance perfiection 
+           div.card-box 
+             div.card-img
+               img(src="/static/img/card dance.png", alt="")
+             div.card-content 
+               p This is the best dance academy of the universe At The Studio Dance Perfection, we live to dance and we love children. QUALITY TRAINING Proper technique, individual attention, creative artistry.
+
+         div.card 
+           h3 Dance the way you like 
+           div.card-box 
+             div.card-img
+               img(src="/static/img/dance boy.png", alt="")
+             div.card-content 
+               p Dance is a performing art form consisting of sequences of movement, either improvised or purposefully selected.
+         div.card 
+           h3 Expert Teaching
+           div.card-box 
+              div.card-img
+                img(src="/static/img/disco.png", alt="")
+              div.card-content 
+                p  professional dance instructors Best teaching experience more than 5 years | by teacher:- We are passionate about dance the personal growth of all our students. 
+ 
+     section#sponcorSection
+         h2 Our Sponsors
+         div#sponsors 
+           img(src="/static/img/logo1.png", alt="sponsor img" class="spImage")
+           img(src="/static/img/logo2.png", alt="sponsor img" class="spImage")
+           img(src="/static/img/logo3.png", alt="sponsor img" class="spImage")
+           img(src="/static/img/logo4.png", alt="sponsor img" class="spImage")
+
